@@ -1,0 +1,11 @@
+.col-1 {
+    width: 74%;
+    padding: .5em;
+    background-color: red;
+}
+
+.cardImg {
+    border-radius: 5px;
+    margin: .5em;
+    cursor: pointer;
+}

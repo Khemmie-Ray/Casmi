@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display:wght@500;700&display=swap');
+
+:root {
+    --brown: #945757;
+    --red: #FF0C0C;
+    --black: #111111;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--brown);
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+}
+
+.main-container {
+    width: 94%;
+    background-color: var(--black);
+    margin:  0 auto;
+}
+
+/* =============================
+           Typography 
+==============================*/
+
+
+
+
+/* =============================
+           Layout 
+==============================*/
+
+
+
+
+
+
+/* =============================
+        Media Queries 
+==============================*/
