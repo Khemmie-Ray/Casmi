@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="product-container">
+      <h4 class="product-name"></h4>
+      <div class="product-img"><img src="" alt="" /></div>
+      <h5 class="product-price"></h5>
+      <p class="product-description"></p>
+    </div>
+
+    <script>
+      const product = JSON.parse(localStorage.getItem("product"));
+      console.log(product);
+      const productContainer = document.querySelector(".product-container");
+      const productName = productContainer.querySelector(".product-name").textContent = "Product " + product.id; 
+      const productImg = productContainer.querySelector(".product-img img").src = product.src.tiny;
+      const productDescription = productContainer.querySelector(".product-description").textContent = product.alt;
+      const productPrice = productContainer.querySelector(".product-price").textContent = "$5.99" 
+    </script>
+  </body>
+</html>
