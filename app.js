@@ -22,14 +22,13 @@ fetch(link, {
     //     imageContainer.innerHTML += imgEl;
     //     }
 
-    // data.photos.forEach(photo => console.log(photo))
-    const photos = data.photos.map((photo) => {
-      return `<div class="card" onclick='getProduct(${JSON.stringify(photo)})'><img src=${
-        photo.src.tiny
-      } alt="" class="cardImg" data-id=${photo.id}/></div>`;
+    const products = data.photos.map((product) => {
+      return `<div class="card" onclick='getProduct(${JSON.stringify(product)})'><img src=${
+        product.src.tiny
+      } alt="" class="cardImg" data-id=${product.id}/></div>`;
     });
 
-    imageContainer.innerHTML = photos;
+    imageContainer.innerHTML = products;
   });
 
   const getProduct = (product) => {
